@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11131a">
+  <meta name="description" content="Честные обзоры игровых устройств, сравнение Nintendo Switch и Steam Deck и проверка совместимости игр.">
+  <title>ИГРОТЕКА — выбери, во что играть</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Игротека — главная"><span class="brand-mark">И</span>ИГРОТЕКА<span class="brand-dot">.</span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#devices">Устройства</a><a href="#compatibility">Игры</a><a href="#quiz">Подбор</a><a href="#plans">Плюс</a>
+    </nav>
+    <button class="nav-cta" id="open-assistant">Спросить помощника <span>↗</span></button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-grid"></div>
+      <div class="hero-copy">
+        <div class="live-label"><span></span> НЕЗАВИСИМЫЙ ГИД ПО ГЕЙМИНГУ</div>
+        <h1>Не угадывай.<br><em>Играй на своём.</em></h1>
+        <p>Понятные сравнения устройств, честная проверка игр и рекомендации под твой бюджет.</p>
+        <div class="hero-actions"><a class="button button-lime" href="#quiz">Подобрать устройство <span>→</span></a><a class="hero-link" href="#compatibility">Проверить игру</a></div>
+        <div class="hero-stats"><div><strong>12</strong><span>устройств в обзоре</span></div><div><strong>10+</strong><span>проверок совместимости</span></div><div><strong>0 ₽</strong><span>за базовый подбор</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="Игровая консоль и контроллер">
+        <div class="art-glow"></div>
+        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Игровой контроллер и консоль" onerror="this.hidden=true">
+        <div class="art-overlay"></div><div class="art-sticker"><span>ТВОЙ СЛЕДУЮЩИЙ</span><strong>GG</strong><span>НАЧИНАЕТСЯ ЗДЕСЬ</span></div>
+        <div class="art-card"><span>✦ РЕДАКТОРСКИЙ ВЫБОР</span><strong>Портативный гейминг</strong><small>Сравниваем без фанатизма</small></div>
+      </div>
+      <div class="hero-scroll"><span></span> ЛИСТАЙ, ТАМ ИНТЕРЕСНО</div>
+    </section>
+
+    <section class="ticker" aria-label="Возможности сайта"><div class="ticker-track"><span>НЕ ТОНЕМ В ХАРАКТЕРИСТИКАХ</span><b>✳</b><span>СМОТРИМ НА ИГРЫ</span><b>✳</b><span>УВАЖАЕМ ТВОЙ БЮДЖЕТ</span><b>✳</b><span>НЕ ТОНЕМ В ХАРАКТЕРИСТИКАХ</span><b>✳</b><span>СМОТРИМ НА ИГРЫ</span><b>✳</b><span>УВАЖАЕМ ТВОЙ БЮДЖЕТ</span></div></section>
+
+    <section class="section devices-section" id="devices">
+      <div class="section-heading"><div><span class="kicker">01 / ВЫБИРАЙ ПО СТИЛЮ</span><h2>Какой у тебя<br><em>игровой вайб?</em></h2></div><p>Тапни по устройству — узнаешь, кому оно подходит, что умеет и где придётся пойти на компромисс.</p></div>
+      <p class="rating-disclaimer">Оценки на карточках — демонстрационные ориентиры гида, а не реальные пользовательские отзывы. Цены, особенно б/у, примерные.</p>
+      <div class="device-filters" id="device-filters" role="group" aria-label="Фильтр по устройствам"></div>
+      <div class="device-grid" id="device-grid"></div>
+    </section>
+
+    <section class="compare-section" id="compare">
+      <div class="compare-copy"><span class="kicker">02 / БИТВА ПОРТАТИВОК</span><h2>Switch или<br><em>Steam Deck?</em></h2><p>Не существует «лучше для всех». Есть то, что подходит именно под твои игры и привычки.</p><button class="button button-lime" id="compare-button">Сравнить по-честному <span>↗</span></button></div>
+      <div class="versus">
+        <article class="versus-card switch-card"><span class="versus-platform">NINTENDO</span><div class="mini-console switch-art"><i></i><b></b><i></i></div><h3>Nintendo Switch OLED</h3><p>Эксклюзивы, простота, игра вдвоём.</p><div class="versus-score"><span>Для Nintendo-игр</span><strong>10/10</strong></div><div class="versus-score"><span>Для ПК-библиотеки</span><strong>2/10</strong></div></article>
+        <div class="versus-vs">VS</div>
+        <article class="versus-card deck-card"><span class="versus-platform">VALVE / PC</span><div class="mini-console deck-art"><i></i><b></b><i></i></div><h3>Steam Deck OLED</h3><p>Библиотека Steam, гибкость, ПК-игры.</p><div class="versus-score"><span>Для библиотеки Steam</span><strong>10/10</strong></div><div class="versus-score"><span>Для простоты «включил и играй»</span><strong>7/10</strong></div></article>
+      </div>
+      <div class="compare-note"><span>КРАТКО:</span> любишь Mario, Zelda и локальный мультиплеер — Switch. Нужна библиотека Steam и настройки — Deck. Совместимость конкретной игры проверяй отдельно.</div>
+    </section>
+
+    <section class="section compatibility-section" id="compatibility">
+      <div class="section-heading"><div><span class="kicker">03 / ИГРА ЗАПУСТИТСЯ?</span><h2>Игра на твоём<br><em>устройстве?</em></h2></div><p>Напиши название игры — покажем подходящие платформы и объясним, запускается ли она напрямую.</p></div>
+      <div class="game-search"><span aria-hidden="true">⌕</span><input id="game-search" type="search" placeholder="Например: RDR 2 или GTA 5" autocomplete="off"><button class="button button-dark" id="game-search-button">Проверить <span>→</span></button></div>
+      <div class="game-examples"><span>ПОПРОБУЙ:</span><button data-game="RDR 2">Red Dead Redemption 2</button><button data-game="GTA 5">GTA V</button><button data-game="Cyberpunk 2077">Cyberpunk 2077</button><button data-game="Minecraft">Minecraft</button></div>
+      <div class="compat-result" id="compat-result" aria-live="polite"></div>
+      <p class="compat-disclaimer">Совместимость и производительность зависят от версии игры, модели устройства и настроек. Игры для ПК не запускаются на смартфонах нативно: для телефона может потребоваться облачный игровой сервис и стабильный интернет.</p>
+    </section>
+
+    <section class="budget-section" id="quiz">
+      <div class="budget-intro"><span class="kicker">04 / МИССИЯ: НЕ БОЛЬШЕ 15 000 ₽</span><h2>Есть 15к.<br><em>Что берём?</em></h2><p>Ответь на пару вопросов — подберём игровой девайс под твой сценарий. Без душных анкет.</p><div class="budget-note"><span>🎯</span><div><strong>Не надо знать характеристики</strong><small>Расскажешь, во что играешь — мы разберёмся.</small></div></div></div>
+      <form class="quiz-card" id="quiz-form">
+        <div class="quiz-progress"><span id="quiz-step-label">ВОПРОС 1 ИЗ 3</span><div><i id="quiz-progress-bar"></i></div></div>
+        <div class="quiz-question" data-question="0"><h3>Где хочется играть?</h3><div class="answer-grid"><label class="answer"><input type="radio" name="place" value="portable" required><span>🚌<b>В дороге</b><small>Достал и играешь</small></span></label><label class="answer"><input type="radio" name="place" value="tv"><span>🛋️<b>Дома у ТВ</b><small>Большой экран, диван</small></span></label><label class="answer"><input type="radio" name="place" value="pc"><span>🖥️<b>За компьютером</b><small>Стол, мышь и клавиатура</small></span></label><label class="answer"><input type="radio" name="place" value="phone"><span>📱<b>На телефоне</b><small>Всегда с собой</small></span></label></div></div>
+        <div class="quiz-question" data-question="1" hidden><h3>Какие игры больше нравятся?</h3><div class="answer-grid"><label class="answer"><input type="radio" name="games" value="big" required><span>🌄<b>Большие приключения</b><small>RDR 2, GTA, открытые миры</small></span></label><label class="answer"><input type="radio" name="games" value="nintendo"><span>⭐<b>Mario и Nintendo</b><small>Эксклюзивы и игры вместе</small></span></label><label class="answer"><input type="radio" name="games" value="competitive"><span>⚡<b>Онлайн и соревнования</b><small>Шутеры и мультиплеер</small></span></label><label class="answer"><input type="radio" name="games" value="casual"><span>🧩<b>Понемногу всего</b><small>Короткие игровые сессии</small></span></label></div></div>
+        <div class="quiz-question" data-question="2" hidden><h3>Что важнее всего?</h3><div class="answer-grid"><label class="answer"><input type="radio" name="priority" value="price" required><span>💸<b>Уложиться в бюджет</b><small>Главное — не переплатить</small></span></label><label class="answer"><input type="radio" name="priority" value="power"><span>🚀<b>Побольше мощности</b><small>Чтобы тянуло современные игры</small></span></label><label class="answer"><input type="radio" name="priority" value="simple"><span>✨<b>Чтобы было просто</b><small>Купил и сразу играешь</small></span></label><label class="answer"><input type="radio" name="priority" value="used"><span>♻️<b>Ок взять б/у</b><small>Если так будет выгоднее</small></span></label></div></div>
+        <div class="quiz-controls"><button class="quiz-back" type="button" id="quiz-back" hidden>← Назад</button><span id="quiz-hint">Можно начать с бюджета до 15 000 ₽</span><button class="button button-lime" type="button" id="quiz-next">Дальше <span>→</span></button></div>
+        <div class="quiz-result" id="quiz-result" hidden></div>
+      </form>
+    </section>
+
+    <section class="assistant-section" id="assistant">
+      <div class="assistant-heading"><span class="kicker">05 / ТВОЙ ИГРОВОЙ НАПАРНИК</span><h2>Спроси — подскажем.<br><em>Без «купи самое дорогое».</em></h2><p>Сравним Switch и Deck, найдём вариант в пределах бюджета или проверим, где работает твоя игра.</p></div>
+      <div class="chat-shell"><div class="chat-top"><div class="bot-avatar">ИИ</div><div><strong>Гид по девайсам</strong><small><span></span> На связи · демо-режим</small></div><button id="clear-chat" aria-label="Очистить чат">↻</button></div>
+        <div class="chat-messages" id="chat-messages"><div class="chat-message bot-message"><span class="message-avatar">ИИ</span><div>Привет! Я подскажу по устройствам из нашего каталога. Спроси, например: <b>«Что лучше — Switch или Steam Deck?»</b> или <b>«Что купить за 15 тысяч?»</b></div></div></div>
+        <div class="suggested-prompts"><button data-prompt="Что лучше: Nintendo Switch или Steam Deck?">Switch или Deck?</button><button data-prompt="Что купить за 15 тысяч для игр?">Девайс за 15к</button><button data-prompt="Потянет ли мой телефон RDR 2?">RDR 2 на телефоне?</button></div>
+        <form class="chat-input" id="chat-form"><input id="chat-input" type="text" placeholder="Напиши свой вопрос…" autocomplete="off" aria-label="Сообщение помощнику"><button type="submit" aria-label="Отправить">↑</button></form>
+        <p class="demo-note">Демо-помощник отвечает по встроенной базе сайта; это не облачная нейросеть. Не отправляй личные данные.</p>
+      </div>
+    </section>
+
+    <section class="plans-section" id="plans">
+      <div class="section-heading"><div><span class="kicker">06 / БАЗОВЫЙ ДОСТУП — БЕСПЛАТНО</span><h2>Хочешь чуть<br><em>больше плюшек?</em></h2></div><p>Платные функции — необязательные. Все основные сравнения, обзоры, проверка игр и подбор доступны бесплатно.</p></div>
+      <div class="plan-grid">
+        <article class="plan-card"><span class="plan-icon">☕</span><span class="plan-tag">НА ОДИН РАЗ</span><h3>Сравнение PRO</h3><p>Расширенная таблица сравнения двух устройств с дополнительными критериями.</p><div class="plan-price">49 ₽ <small>/ сравнение</small></div><button class="plan-button" data-plan="Сравнение PRO" data-price="49">Попробовать за 49 ₽ <span>→</span></button></article>
+        <article class="plan-card featured-plan"><span class="plan-icon">🎯</span><span class="plan-tag">МИНИ-ПОДБОР</span><h3>Персональный шорт-лист</h3><p>Сохрани до пяти вариантов и получи краткий список плюсов и компромиссов.</p><div class="plan-price">99 ₽ <small>/ подбор</small></div><button class="plan-button" data-plan="Персональный шорт-лист" data-price="99">Выбрать за 99 ₽ <span>→</span></button></article>
+        <article class="plan-card"><span class="plan-icon">🕹️</span><span class="plan-tag">ДЛЯ СВОИХ</span><h3>Игровой клуб</h3><p>Дополнительные подборки игр и устройств, идеи для игровых вечеров и тематические квизы.</p><div class="plan-price">149 ₽ <small>/ месяц</small></div><button class="plan-button" data-plan="Игровой клуб" data-price="149">Вступить за 149 ₽ <span>→</span></button></article>
+      </div>
+      <p class="payment-note">Демонстрационные тарифы: сайт не принимает платежи и не оформляет подписку. Кнопки показывают информационное подтверждение.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><a class="brand" href="#home"><span class="brand-mark">И</span>ИГРОТЕКА<span class="brand-dot">.</span></a><p>Помогаем выбрать игровой девайс без лишнего шума.</p><span>© 2026 · Независимый гид · Цены и характеристики могут меняться</span></footer>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
